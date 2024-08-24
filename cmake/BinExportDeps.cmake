@@ -96,11 +96,11 @@ if(BINEXPORT_ENABLE_BINARYNINJA)
   if(BINEXPORT_BINARYNINJA_CHANNEL STREQUAL "stable")
     set(_binexport_binaryninjacore_suffix "_stable")
     set(_binexport_binaryninja_git_tag
-        "59e569906828e91e4884670c2bba448702f5a31d") # 2023-09-19 v3.5.4526
+        "967ffc9bd705f6820c4dbfe97f301d52facb1417") # 2024-08-14 v4.1.5902
   else()
     set(_binexport_binaryninjacore_suffix "")
     set(_binexport_binaryninja_git_tag
-        "6e2b374dece03f6fb48a1615fa2bfee809ec2157") # 2023-09-24
+        "de23abd02ab27b6623656ed04e9b62d4dc1361b7") # 2024-08-24
   endif()
   FetchContent_Declare(binaryninjaapi
     GIT_REPOSITORY https://github.com/Vector35/binaryninja-api.git
