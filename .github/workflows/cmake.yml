@@ -22,7 +22,7 @@ jobs:
 
     - name: make build dir
       shell: bash
-      run: mkdir ${{ github.workspace }}/build
+      run: mkdir ${{ runner.workspace }}/build
 
     - name: Enable Developer Command Prompt (Windows)
       if: matrix.os == 'windows-2022'
