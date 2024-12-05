@@ -83,9 +83,6 @@ endif()
 configure_file(version.cc.in version.cc ESCAPE_QUOTES @ONLY)
 
 # Plugin names for IDA Pro and Binary Ninja
-if(BINEXPORT_ENABLE_IDAPRO)
-  set(binexport_ida_plugin_name binexport${binexport_VERSION_MAJOR}_ida)
-endif()
 if(BINEXPORT_ENABLE_BINARYNINJA)
   set(binexport_bn_plugin_name binexport${binexport_VERSION_MAJOR}_binaryninja)
 endif()
@@ -277,10 +274,6 @@ target_link_libraries(binexport_core PUBLIC
   binexport_shared
 )
 
-# IDA Pro plugins
-if(BINEXPORT_ENABLE_IDAPRO)
-  add_subdirectory(ida)
-endif()
 
 # Binary Ninja plugin
 if(BINEXPORT_ENABLE_BINARYNINJA)
