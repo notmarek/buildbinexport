@@ -26,7 +26,6 @@ option(BINEXPORT_BUILD_TESTING
 option(BINEXPORT_BUILD_BENCHMARK
        "If this and BINEXPORT_BUILD_TESTING is ON, build benchmark tests" OFF)
 
-option(BINEXPORT_ENABLE_IDAPRO "Build the IDA Pro plugins" ON)
 option(BINEXPORT_ENABLE_BINARYNINJA "Build the Binary Ninja plugin" ON)
 
 set(BINEXPORT_BINARYNINJA_CHANNEL "stable" CACHE
