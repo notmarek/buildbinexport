@@ -142,9 +142,6 @@ endif()
 find_package(Boost 1.83 REQUIRED)
 
 find_package(Git)
-if(BINEXPORT_ENABLE_IDAPRO)
-  find_package(IdaSdk REQUIRED)
-endif()
 
 #set(BUILD_TESTING ${BINEXPORT_SAVE_BUILD_TESTING})
 
